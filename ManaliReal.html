@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel to Manali</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzSQSCNbwi4fQF_41powl2nZpidMT-IkuOYv3LdvJ42A&s);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            color: #333;
+        }
+        nav a:hover {
+            color: #555;
+        }
+        .heading {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.info {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    
+        }
+        .info:hover {
+    background-color: #f2f2f2; /* Change background color on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow on hover */
+    transform: scale(1.05); /* Scale up the section on hover */
+}
+        .info h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        .info p {
+            margin-bottom: 0;
+        }      
+
+.about-image {
+    display: flex; /* Use flexbox for the gallery */
+    flex-wrap: wrap; /* Allow images to wrap onto multiple lines */
+    transition: transform 0.3s ease;
+
+}
+.about-image img{
+    
+    width: 290px; /* Set the width of each image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 5px; /* Add some margin between images */
+}
+.about-image img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+        .hotel {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .hotel-card {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Combine transitions */
+    overflow: hidden; /* Hide overflowing content (like the hover effect) */
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Ensure the image behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+.hotel-card:hover {
+    /* Apply styles when hovering over the hotel card */
+    transform: scale(1.05); /* Increase the scale of the card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transform: scale(1.05); /* Scale up the image on hover */
+    filter: brightness(110%); /* Increase brightness for hover effect */
+}
+.hotel-card img {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Ensure the image behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    max-height: 170px; /* Set the maximum height of the image */
+    transition: transform 0.3s ease;
+}
+.hotel-card:hover img {
+    transform: scale(1.05); /* Scale up the image on hover */
+    background-color: #00ff00;
+}
+
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Manali</h1>
+    </header>
+    <nav>
+        <a href="#about">About Manali</a>
+        <a href="#hotels">Hotels</a>
+        <a href="#activities">Things to Do</a>
+    </nav>
+    <div class="heading" id="about">
+        <div class="about-content"></div>
+        
+        <p>Manali is a town, near Kullu town in Kullu district in the Indian state of Himachal Pradesh.
+             It is situated in the northern end of the Kullu Valley, formed by the Beas River. </p></div>
+            <div class="about-image">
+        <img src="data:image/jpeg;base64,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">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUe9khJul6tDuotENV4yKfQJ5oWsoUP5BZdw&s">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ZWdorrBVQf-o-V7SEcAo5pfhhjRqCMzwYA&s">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6_oBGhSYFGa6T5MsPFr_nXaNhjRaivGlAog&s">
+    </div>
+</div>
+
+        <div class="info">
+            <h2>Cultural Beauty</h2>
+            <p>Arranged on the elevated hills of the Himalayas, Manali is a spot that has been untouched by commercialization and globalization. It is altogether unique and different in relation to rest of the Indian states and has its old world charm. The Culture of Manali is such that it portrays a sound synchronization between conservative qualities and current considerations. The cultural heritage of Manali is said to be very traditional and rural.</p>
+        </div>
+        <div class="info">
+            <h2>History</h2>
+            <p>The history of Manali is quiet mythical. The history of this place is related to the reign of Mahabharata. It is believed that Manali was the home of lawgiver Lord Manu. Even the name Manali means house of Manu. There is a story behind Manali and is said that when Manu and other Gods were flooded, the seventh avatar of Lord Vishnu saved them by taking to dry lands and Manu found Manali as his refuge. Some say that during the 17th century, the idol of Lord Raghunathji was bought by Raja Jagat Singh to his thrones who till now a presiding deity and king of Manali.</p>
+        </div>
+        <div class="info">
+            <h2>Major Tourist Attractions</h2>
+            <p>Some of the major tourist attractions in Manali include Kullu,Solang Valley, Jogini Waterfalls, Hadimba Temple, Gulaba, Van Vihar Park, Vashisht Temple, Rahala Falls, Manu Temple, Manikaran Sahib Gurudwara, etc.</p>
+        </div>
+        <div class="info">
+            <h2>Peak Time to Visit</h2>
+            <p>The best time to visit Manali is during the summer months of March to June when the weather is pleasant with temperatures ranging between 10°C to 25°C. Whereas, if you're looking for snow activities and winter sports, the best time to visit Manali is during the winter months of October to February.</p>
+        </div>
+        <div class="destination" id="activities">
+            <h2>Things to Do in Manali</h2>
+            <ul>
+                <li> Visit Rohtang Pass: This high mountain pass offers breathtaking views of the surrounding Himalayan peaks and is a popular spot for adventure activities like skiing and snowboarding in winter.</li>
+                <li> Explore Solang Valley: Known for its scenic beauty and adventure sports, Solang Valley is great for activities like paragliding, zorbing, and quad biking.</li>
+                <li> Visit Hadimba Temple: This ancient wooden temple dedicated to Hidimba Devi, built in 1553, is surrounded by cedar forests and has a tranquil ambiance.</li>
+                <li> Take a trek to Beas Kund: For trekking enthusiasts, Beas Kund offers a moderately challenging trek with stunning views of the Beas River and snow-capped peaks.</li>
+                <li> Experience Old Manali: Wander through the narrow lanes of Old Manali to explore its quaint cafes, vibrant markets, and peaceful riverside spots, offering a more relaxed and authentic experience compared to the bustling main town.</li>
+            </ul>
+             
+                </div>
+    </div>
+    
+</div>
+
+    <h2>Hotels in Manali</h2>
+        <div class="hotel" id="hotels">
+            <div class="hotel-card">
+       
+        
+            <h3>Tiaraa Hotels and Resorts</h3>
+            <a href="https://www.tiaraahotels.com/manali"><img src="https://media-cdn.tripadvisor.com/media/photo-s/29/13/4a/f0/tiaraa-hotels-resorts.jpg" height="600" height="400" ></a>
+           
+           
+                <h3>Tiaraa Hotels and Resorts - Details</h3>
+                <p>Location : Siyal Road, Club House Road, Old Manali, Manali, Himachal Pradesh</p>
+                <p>Facilities: Accommodation, Dining, Spa and Wellness, Conference and Banquet Facilities</p>
+                <p>Price per night : Rs 9,491</p>
+                
+                
+                <p>Book Now: <a href="https://www.tiaraahotels.com/manali">Book Now</a></p>
+        </div>
+        <div class="hotel-card">
+            <h3>Woodrock Hotel</h3>
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/24/c9/0b/41/woodrock-hotel-manali.jpg" width="600">
+            <h3>Woodrock Hotel <Details></Details></h3>
+        <p>Location: Near Hadimba Temple, Manali</p>
+        <p>Facilities: Restaurant, Swimming Pool, Gym</p>
+        <p>Price per night : Rs 8,000</p>
+      
+        <p>Book Now: <a href="https://www.woodrockhotels.com/">Book Now</a></p>
+             <p><a href="https://www.woodrockhotels.com/">More Details</a></p>
+           
+        </div>
+        <div class="hotel-card">
+            <h3>Justa Grand View Resort and Spa</h3>
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/27/b4/e7/e8/justa-grand-view-resort.jpg" width="600">
+            <h3>Justa Grand View Resort and Spa Details</h3>
+        <p>Location: simsa, Manali</p>
+        <p>Facilities: Restaurant, Scenic views,Recreation</p>
+        <p>Price per night: Rs 7,431</p>
+        
+           
+            <p><a href="https://www.justahotels.com/justa-grand-view-manali/">More Details</a></p>
+            <p>Book Now: <a href="https://www.justahotels.com/justa-grand-view-manali/">Book Now</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>
