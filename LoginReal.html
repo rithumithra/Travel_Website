@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: linear-gradient(to right bottom, #3498db, #8e44ad);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .login-container {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      padding: 40px;
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+    .login-container h2 {
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .login-container form input[type="text"],
+    .login-container form input[type="password"] {
+      width: calc(100% - 40px);
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 25px;
+      background-color: #f2f2f2;
+    }
+    .login-container form input[type="submit"] {
+      width: calc(100% - 40px);
+      padding: 12px 20px;
+      border: none;
+      border-radius: 25px;
+      background-color: #3498db;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .login-container form input[type="submit"]:hover {
+      background-color: #2980b9;
+    }
+    .login-container .destinations {
+      margin-top: 30px;
+    }
+    .login-container .destinations h3 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .login-container .destinations ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .login-container .destinations ul li {
+      margin: 0 10px;
+      font-size: 20px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-container">
+  <h2>Welcome Back to WanderLust India!</h2>
+  <form action="/login" method="post">
+    <input type="text" placeholder="Username" name="username" required>
+    <input type="password" placeholder="Password" name="password" required>
+    <input type="submit" value="Login">
+  </form>
+  <div class="destinations">
+    <h3>Popular Destinations</h3>
+    <ul>
+      <li><i class="fas fa-map-marker-alt"></i> Jammu</li>
+      <li><i class="fas fa-map-marker-alt"></i> Jaipur</li>
+      <li><i class="fas fa-map-marker-alt"></i> Lonavala</li>
+      <li><i class="fas fa-map-marker-alt"></i> Manali</li>
+      <li><i class="fas fa-map-marker-alt"></i> Lakshadweep</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
