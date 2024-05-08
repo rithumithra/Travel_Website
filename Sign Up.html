@@ -4,8 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sign Up - Travel Website</title>
-<!-- Bootstrap CSS -->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <style>
   body {
     margin: 0;
@@ -16,6 +14,8 @@
     justify-content: center;
     overflow: hidden;
     position: relative;
+    background-color: #f8f9fa; /* Light gray background */
+    font-family: Arial, sans-serif;
   }
   #bgVideo {
     position: absolute;
@@ -31,7 +31,27 @@
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    background-color: rgba(255, 255, 255, 0.5); /* Add opacity to make the form readable */
+    background-color: rgba(255, 255, 255, 0.9); /* Add opacity to make the form readable */
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .btn-primary {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue color for button */
+    color: #fff;
+    cursor: pointer;
   }
   .error-message {
     color: #ff0000;
@@ -58,15 +78,11 @@
     <div class="form-group">
       <input type="password" class="form-control" id="password" placeholder="Password" required>
     </div>
-    <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+    <button type="submit" class="btn-primary">Sign Up</button>
     <p class="error-message mt-2" id="errorMessage">Invalid input. Please check your details.</p>
   </form>
 </div>
 
-<!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
   function validateForm() {
     var fullname = document.getElementById('fullname').value;
